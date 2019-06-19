@@ -85,6 +85,7 @@ class Grid(BackGrid):
                               BasisVector((0, 1), self.cell_size, self.central_vertex, RED)]
         self.vectors = []
         self.available_colors = [(145, 38, 191), (242, 183, 5), (217, 61, 4), (57, 140, 191), (128, 191, 132)]
+        self.prev_vector = None
 
     def draw_object(self, window, weight=1):
         super().draw_object(window, weight)
@@ -95,6 +96,12 @@ class Grid(BackGrid):
         pygame.draw.circle(window, BLACK, (self.x, self.y), 3)
 
     def add_vector(self, cords):
+        if not self.available_colors:
+            raise TooManyVectors()
+        untransformed_cords = np.linalg.inv(self.get_matrix()).dot(cords)
+        self.vectors.append(Vector(untransformed_cords, self.cell_size, self.central_vertex, self.available_colors.pop(-1)))
+
+    def add_vector_rel(self, cords):
         if not self.available_colors:
             raise TooManyVectors()
         self.vectors.append(Vector(cords, self.cell_size, self.central_vertex, self.available_colors.pop(-1)))

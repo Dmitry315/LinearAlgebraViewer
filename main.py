@@ -11,7 +11,6 @@ pygame.display.set_caption('Linear Algebra Viewer')
 def main():
     run = True
     grabbed_vector = None
-    prev_vector = None
     while run:
         clock.tick(fps)
         for event in pygame.event.get():
@@ -22,7 +21,7 @@ def main():
                 vector = transformed_grid.check_grabbing(pygame.mouse.get_pos())
                 grabbed_vector = vector
                 if vector:
-                    prev_vector = prev_vector if vector[0] == 'basis' else vector
+                    transformed_grid.prev_vector = transformed_grid.prev_vector if vector[0] == 'basis' else vector
             # put grabbed vector
             if event.type == pygame.MOUSEBUTTONUP:
                 grabbed_vector = None
@@ -41,12 +40,7 @@ def main():
                 transformed_grid.vectors[grabbed_vector[1]].change_cords(pygame.mouse.get_pos())
                 transformed_grid.vectors[grabbed_vector[1]].cords = np.linalg.inv(transformed_grid.get_matrix()).dot(
                     transformed_grid.vectors[grabbed_vector[1]].transformed)
-
-        if prev_vector:
-            if prev_vector[1] < len(transformed_grid.vectors):
-                main_window.Vector_x.setText(str(round(transformed_grid.vectors[prev_vector[1]].transformed[0], 3)))
-                main_window.Vector_y.setText(str(round(transformed_grid.vectors[prev_vector[1]].transformed[1], 3)))
-
+            update_information(main_window)
         sc.fill(WHITE)
         main_grid.draw_object(sc)
         transformed_grid.draw_object(sc)
