@@ -5,8 +5,10 @@ from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5 import uic
 import sys
 
+# screen size
 size = width, height = 1200, 800
 fps = 30
+# colors in rgb
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 DARK_BLUE = (0, 0, 255)
