@@ -3,10 +3,10 @@ from core import *
 
 # show coordinates of vectors in tab
 def update_information(window):
-    window.matrix00.setText(str(round(transformed_grid.basis_vectors[0].transformed[0], 3)))
-    window.matrix10.setText(str(round(transformed_grid.basis_vectors[0].transformed[1], 3)))
-    window.matrix01.setText(str(round(transformed_grid.basis_vectors[1].transformed[0], 3)))
-    window.matrix11.setText(str(round(transformed_grid.basis_vectors[1].transformed[1], 3)))
+    window.current_cords00.setText(str(round(transformed_grid.basis_vectors[0].transformed[0], 3)))
+    window.current_cords10.setText(str(round(transformed_grid.basis_vectors[0].transformed[1], 3)))
+    window.current_cords01.setText(str(round(transformed_grid.basis_vectors[1].transformed[0], 3)))
+    window.current_cords11.setText(str(round(transformed_grid.basis_vectors[1].transformed[1], 3)))
     if transformed_grid.prev_vector:
         if transformed_grid.prev_vector[1] < len(transformed_grid.vectors):
             window.Vector_x.setText(
@@ -63,10 +63,11 @@ class MainWindow(QMainWindow):
     # get matrix and apply transformation
     @checking_exceptions
     def apply(self):
-        matrix = np.array([[float(self.matrix00.text()), float(self.matrix01.text())],
-                           [float(self.matrix10.text()), float(self.matrix11.text())]])
+        matrix = np.array([[float(self.matrix00.text().replace(',', '.')), float(self.matrix01.text().replace(',', '.'))],
+                           [float(self.matrix10.text().replace(',', '.')), float(self.matrix11.text().replace(',', '.'))]])
+        M = matrix.dot(transformed_grid.get_matrix())
         for i in range(2):
-            transformed_grid.basis_vectors[i].transform(matrix)
+            transformed_grid.basis_vectors[i].transform(M)
         transformed_grid.transform()
         update_information(self)
 
