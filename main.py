@@ -56,6 +56,7 @@ def main():
                     transformed_grid.vectors[grabbed_vector[1]].transformed)
             update_information(main_window)
         # show all in screen
+        update_information_constantly(main_window)
         sc.fill(WHITE)
         main_grid.draw_object(sc)
         transformed_grid.draw_object(sc)

@@ -1,12 +1,6 @@
 from core import *
 
-
-# show coordinates of vectors in tab
 def update_information(window):
-    window.current_cords00.setText(str(round(transformed_grid.basis_vectors[0].transformed[0], 3)))
-    window.current_cords10.setText(str(round(transformed_grid.basis_vectors[0].transformed[1], 3)))
-    window.current_cords01.setText(str(round(transformed_grid.basis_vectors[1].transformed[0], 3)))
-    window.current_cords11.setText(str(round(transformed_grid.basis_vectors[1].transformed[1], 3)))
     if transformed_grid.prev_vector:
         if transformed_grid.prev_vector[1] < len(transformed_grid.vectors):
             window.Vector_x.setText(
@@ -18,6 +12,13 @@ def update_information(window):
             window.Vector_y_rel.setText(
                 str(round(transformed_grid.vectors[transformed_grid.prev_vector[1]].coords[1], 3)))
 
+
+def update_information_constantly(window):
+    window.current_cords00.setText(str(round(transformed_grid.basis_vectors[0].transformed[0], 3)))
+    window.current_cords10.setText(str(round(transformed_grid.basis_vectors[0].transformed[1], 3)))
+    window.current_cords01.setText(str(round(transformed_grid.basis_vectors[1].transformed[0], 3)))
+    window.current_cords11.setText(str(round(transformed_grid.basis_vectors[1].transformed[1], 3)))
+    window.determinant.setText(str(round(np.linalg.det(transformed_grid.get_matrix()), 3)))
 
 # decorator for checking exceptions in METHODS IN PYQT WINDOWS
 def checking_exceptions(method):
