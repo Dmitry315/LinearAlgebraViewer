@@ -50,16 +50,51 @@ class MainWindow(QMainWindow):
         super().__init__()
         # load pattern
         self.ui = uic.loadUi('main_window.ui', self)
+
         # apply linear transformation
         self.ApplyButton.clicked.connect(self.apply)
+
+        self.matrix00.returnPressed.connect(self.change_focus)
+        self.matrix01.returnPressed.connect(self.change_focus)
+        self.matrix10.returnPressed.connect(self.change_focus)
+        self.matrix11.returnPressed.connect(self.apply)
+
         # unapply transformation
         self.ResetButton.clicked.connect(self.reset)
+
         # adding and changing vector using coords of grid
         self.AddVector.clicked.connect(self.add_vector)
+        self.Vector_x.returnPressed.connect(self.change_focus)
+        self.Vector_y.returnPressed.connect(self.add_vector)
         self.ChangeVectorRealCords.clicked.connect(self.change_vector_real_cords)
+
         # adding and changing vector using basis vector
         self.AddVector_rel.clicked.connect(self.add_vector_rel)
+        self.Vector_x_rel.returnPressed.connect(self.change_focus)
+        self.Vector_y_rel.returnPressed.connect(self.add_vector_rel)
         self.ChangeVectorRelativeCords.clicked.connect(self.change_vector_relative_cords)
+
+        self.change_focus_map = {self.matrix00: self.matrix01,
+                                 self.matrix01: self.matrix10,
+                                 self.matrix10: self.matrix11,
+                                 self.Vector_x: self.Vector_y,
+                                 self.Vector_x_rel: self.Vector_y_rel}
+
+
+    def change_focus(self):
+        s = self.sender()
+        self.change_focus_map[s].setFocus()
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_Delete:
+            transformed_grid.delete_vector()
+        elif event.key() == Qt.Key_R:
+            self.reset()
+        elif event.key() == Qt.Key_A:
+            self.add_vector()
+        elif event.key() == Qt.Key_C:
+            self.change_vector_real_cords()
+
 
     # get matrix and apply transformation
     @checking_exceptions

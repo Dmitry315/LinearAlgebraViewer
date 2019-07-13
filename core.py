@@ -118,6 +118,13 @@ class Grid(BackGrid):
         # buffer for previous vector, for changing it's coords via tab
         self.prev_vector = None
 
+    # delete chosen vector
+    def delete_vector(self):
+        if self.prev_vector:
+            self.available_colors.append(self.vectors[self.prev_vector[1]].color)
+            del self.vectors[self.prev_vector[1]]
+            self.prev_vector = None
+
     # draw grid, center and all vectors
     def draw_object(self, window, weight=1):
         super().draw_object(window, weight)

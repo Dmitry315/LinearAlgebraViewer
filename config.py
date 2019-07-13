@@ -1,8 +1,9 @@
 import pygame
 import numpy as np
 from PyQt5 import QtGui
-from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtWidgets import QMainWindow, QApplication, QShortcut
 from PyQt5 import uic
+from PyQt5.QtCore import Qt
 import sys
 
 # screen size

@@ -37,6 +37,11 @@ def main():
             # put grabbed vector, it is still in buffer
             if event.type == pygame.MOUSEBUTTONUP:
                 grabbed_vector = None
+            # HOTKEYS
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_DELETE:
+                    transformed_grid.delete_vector()
+
         # move grabbed vector
         if grabbed_vector:
             # check vector type, then change coords
