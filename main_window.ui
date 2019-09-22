@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>721</width>
+    <width>831</width>
     <height>379</height>
    </rect>
   </property>
@@ -453,7 +453,7 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>240</x>
       <y>240</y>
       <width>160</width>
       <height>80</height>
@@ -490,7 +490,7 @@
    <widget class="QWidget" name="gridLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>420</x>
       <y>240</y>
       <width>259</width>
       <height>80</height>
@@ -524,13 +524,120 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>10</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vectors</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>40</y>
+      <width>91</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="Green">
+       <property name="text">
+        <string>Green( - ; - )</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Blue">
+       <property name="text">
+        <string>Blue( - ; - )</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Orange">
+       <property name="text">
+        <string>Orange( - ; - )</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Yellow">
+       <property name="text">
+        <string>Yellow( - ; - )</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Purple">
+       <property name="text">
+        <string>Purple( - ; - )</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>30</y>
+      <width>31</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="green_btn">
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="blue_btn">
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="orange_btn">
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="yellow_btn">
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="purple_btn">
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>721</width>
+     <width>831</width>
      <height>21</height>
     </rect>
    </property>

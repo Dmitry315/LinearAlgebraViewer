@@ -19,6 +19,22 @@ def update_information_constantly(window):
     window.current_cords01.setText(str(round(transformed_grid.basis_vectors[1].transformed[0], 3)))
     window.current_cords11.setText(str(round(transformed_grid.basis_vectors[1].transformed[1], 3)))
     window.determinant.setText(str(round(np.linalg.det(transformed_grid.get_matrix()), 3)))
+    window.Green.setText('Green( - ; - )')
+    window.Blue.setText('Blue( - ; - )')
+    window.Orange.setText('Orange( - ; - )')
+    window.Yellow.setText('Yellow( - ; - )')
+    window.Purple.setText('Purple( - ; - ))')
+    for v in transformed_grid.vectors:
+        if v.color == COLORS['green']:
+            window.Green.setText(window.Green.text().replace('-','{}').format(*[round(i, 3) for i in v.coords]))
+        elif v.color == COLORS['blue']:
+            window.Blue.setText(window.Blue.text().replace('-','{}').format(*[round(i, 3) for i in v.coords]))
+        elif v.color == COLORS['orange']:
+            window.Orange.setText(window.Orange.text().replace('-','{}').format(*[round(i, 3) for i in v.coords]))
+        elif v.color == COLORS['yellow']:
+            window.Yellow.setText(window.Yellow.text().replace('-','{}').format(*[round(i, 3) for i in v.coords]))
+        elif v.color == COLORS['purple']:
+            window.Purple.setText(window.Purple.text().replace('-','{}').format(*[round(i, 3) for i in v.coords]))
 
 # decorator for checking exceptions in METHODS IN PYQT WINDOWS
 def checking_exceptions(method):
@@ -30,6 +46,7 @@ def checking_exceptions(method):
             self.ErrorLog.setText('Too many vectors')
         except Exception as err:
             self.ErrorLog.setText('Error')
+            print(err)
 
     return wrapped
 
@@ -74,6 +91,13 @@ class MainWindow(QMainWindow):
         self.Vector_y_rel.returnPressed.connect(self.add_vector_rel)
         self.ChangeVectorRelativeCords.clicked.connect(self.change_vector_relative_cords)
 
+        # deleting vectors
+        self.green_btn.clicked.connect(self.delete_vector)
+        self.blue_btn.clicked.connect(self.delete_vector)
+        self.orange_btn.clicked.connect(self.delete_vector)
+        self.yellow_btn.clicked.connect(self.delete_vector)
+        self.purple_btn.clicked.connect(self.delete_vector)
+
         self.change_focus_map = {self.matrix00: self.matrix01,
                                  self.matrix01: self.matrix10,
                                  self.matrix10: self.matrix11,
@@ -94,6 +118,18 @@ class MainWindow(QMainWindow):
             self.add_vector()
         elif event.key() == Qt.Key_C:
             self.change_vector_real_cords()
+
+    # x-button
+    @checking_exceptions
+    def delete_vector(self):
+        color = self.sender().objectName().split('_')[0]
+        for num, v in enumerate(transformed_grid.vectors):
+            if v.color == COLORS[color]:
+                transformed_grid.available_colors.append(COLORS[color])
+                del transformed_grid.vectors[num]
+                transformed_grid.prev_vector = None
+                break
+
 
 
     # get matrix and apply transformation

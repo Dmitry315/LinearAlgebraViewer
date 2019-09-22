@@ -1,38 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cb0bb8a-d4a1-4cbe-93aa-20589611a089" name="Default Changelist" comment="" />
+    <list default="true" id="2cb0bb8a-d4a1-4cbe-93aa-20589611a089" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_window.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_window.ui" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/gui.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="221">
+                    <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+            <state relative-caret-position="850">
+              <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gui.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-950">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
+            <state relative-caret-position="253">
+              <caret line="99" column="8" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -40,8 +55,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="323">
+              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,9 +88,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/core.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/gui.py" />
-        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -83,7 +101,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -94,7 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,9 +123,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -208,14 +227,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26709402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32713348" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32713348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -241,31 +259,34 @@
     <SUITE FILE_PATH="coverage/Linear_Algebra_Viewer$gui.coverage" NAME="gui Coverage Results" MODIFIED="1560686380342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gui.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
+        <state relative-caret-position="850">
+          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="323">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="99" column="8" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
         </state>
       </provider>
     </entry>
