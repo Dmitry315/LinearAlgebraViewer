@@ -1,5 +1,6 @@
 import pygame
 import numpy as np
+from numpy import sqrt, log, sin, sinh, cos, cosh, tan, tanh
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QMainWindow, QApplication, QShortcut
 from PyQt5 import uic
@@ -16,6 +17,7 @@ DARK_BLUE = (0, 0, 255)
 BLUE = (100, 149, 237)
 GREY = (128, 128, 128)
 RED = (255, 0, 0)
+Epsilon = 10 ** (-10)
 COLORS = {'green': (128, 191, 132),
           'blue': (57, 140, 191),
           'orange': (217, 61, 4),

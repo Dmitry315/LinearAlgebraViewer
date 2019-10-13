@@ -39,6 +39,8 @@ class Vertex:
     def connect(self, window, another_vertex, color, weight=1):
         pygame.draw.line(window, color, self.real_cords(), another_vertex.real_cords(), weight)
 
+    def draw(self, window):
+        pygame.draw.circle(window, BLACK, self.real_cords(), 2)
 
 # Vector's start point in the middle of the grid,
 # so we can imagine it as vertex that determine end of vector
@@ -98,7 +100,8 @@ class BackGrid:
 # If more than 5 custom vectors
 class TooManyVectors(Exception):
     pass
-
+class WrongFunction(Exception):
+    pass
 
 # grid that show us transformed plane
 class Grid(BackGrid):
@@ -117,6 +120,20 @@ class Grid(BackGrid):
         self.available_colors = [(145, 38, 191), (242, 183, 5), (217, 61, 4), (57, 140, 191), (128, 191, 132)]
         # buffer for previous vector, for changing it's coords via tab
         self.prev_vector = None
+        # function
+        self.function = ''
+        self.transformed_function = ''
+        self.function_dots = []
+
+    def init_function(self):
+        self.function_dots = []
+        f = self.function.replace('^', '**').lower()
+        for x in np.arange(-10.0, 10.0, 0.01):
+            try:
+                y = eval(f)
+                self.function_dots.append(Vertex((x, y), self.cell_size, (self.x, self.y)))
+            except Exception as err:
+                print(err)
 
     # delete chosen vector
     def delete_vector(self):
@@ -130,8 +147,16 @@ class Grid(BackGrid):
         super().draw_object(window, weight)
         self.basis_vectors[0].draw(window)
         self.basis_vectors[1].draw(window)
+        for dot in self.function_dots:
+            try:
+                dot.draw(window)
+            except Exception as err:
+                pass
         for vector in self.vectors:
-            vector.draw(window)
+            try:
+                vector.draw(window)
+            except Exception as err:
+                pass
         pygame.draw.circle(window, BLACK, (self.x, self.y), 3)
 
     # add vector by changing transformed coords
@@ -163,6 +188,12 @@ class Grid(BackGrid):
             self.right_vertexes[i].transform(matrix)
         for i in range(len(self.vectors)):
             self.vectors[i].transform(matrix)
+        for i in range(len(self.function_dots)):
+            self.function_dots[i].transform(matrix)
+        f = '{} = ' + self.function.replace('x', '{}')
+        params = [[(str(round(1/j, 2)) if abs(j) > Epsilon else '0') for j in i] for i in matrix]
+        self.transformed_function = f.format('(' + params[0][1] + '*x + ' + params[1][1] + '*y)',
+                                             '(' + params[0][0] + '*x + ' + params[1][0] + '*y)')
 
     # return what vector we grabbed by mouse
     def check_grabbing(self, mouse_cords):

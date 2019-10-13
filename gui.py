@@ -35,6 +35,7 @@ def update_information_constantly(window):
             window.Yellow.setText(window.Yellow.text().replace('-','{}').format(*[round(i, 3) for i in v.coords]))
         elif v.color == COLORS['purple']:
             window.Purple.setText(window.Purple.text().replace('-','{}').format(*[round(i, 3) for i in v.coords]))
+    window.rotated_function.setText(transformed_grid.transformed_function)
 
 # decorator for checking exceptions in METHODS IN PYQT WINDOWS
 def checking_exceptions(method):
@@ -104,6 +105,9 @@ class MainWindow(QMainWindow):
                                  self.Vector_x: self.Vector_y,
                                  self.Vector_x_rel: self.Vector_y_rel}
 
+        # function
+        self.draw_btn.clicked.connect(self.draw_function)
+        self.rotate_btn.clicked.connect(self.rotate)
 
     def change_focus(self):
         s = self.sender()
@@ -118,6 +122,24 @@ class MainWindow(QMainWindow):
             self.add_vector()
         elif event.key() == Qt.Key_C:
             self.change_vector_real_cords()
+
+    @checking_exceptions
+    def rotate(self):
+        a = float(self.angle.text()) * np.pi / 180
+        # coordinates of rotated basis vectors
+        rotate_matrix = transformed_grid.get_matrix().dot(np.array([[cos(a), -sin(a)],[sin(a), cos(a)]]))
+        transformed_grid.basis_vectors[0].transform(rotate_matrix)
+        transformed_grid.basis_vectors[1].transform(rotate_matrix)
+        transformed_grid.transform()
+        update_information(self)
+
+    # add dots to plane and init
+    @checking_exceptions
+    def draw_function(self):
+        transformed_grid.function = self.function.text()
+        transformed_grid.transformed_function = 'y = ' + self.function.text()
+        transformed_grid.init_function()
+        self.rotated_function.setText('y = ' + transformed_grid.function)
 
     # x-button
     @checking_exceptions
