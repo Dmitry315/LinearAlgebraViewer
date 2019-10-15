@@ -1,6 +1,6 @@
 import pygame
 import numpy as np
-from numpy import sqrt, log, sin, sinh, cos, cosh, tan, tanh
+from numpy import sqrt, log, sin, sinh, cos, cosh, tan, tanh, arccos, arcsin, arctan
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QMainWindow, QApplication, QShortcut
 from PyQt5 import uic

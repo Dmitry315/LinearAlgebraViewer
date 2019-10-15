@@ -37,6 +37,10 @@ def update_information_constantly(window):
             window.Purple.setText(window.Purple.text().replace('-','{}').format(*[round(i, 3) for i in v.coords]))
     window.rotated_function.setText(transformed_grid.transformed_function)
 
+class Validator(QtGui.QValidator):
+    def validate(self, string, pos):
+        return QtGui.QValidator.Acceptable, string.lower().replace('[', '(').replace(']', ')'), pos
+
 # decorator for checking exceptions in METHODS IN PYQT WINDOWS
 def checking_exceptions(method):
     def wrapped(self):
@@ -106,8 +110,11 @@ class MainWindow(QMainWindow):
                                  self.Vector_x_rel: self.Vector_y_rel}
 
         # function
+        self.validator = Validator(self)
+        self.function.setValidator(self.validator)
         self.draw_btn.clicked.connect(self.draw_function)
         self.rotate_btn.clicked.connect(self.rotate)
+
 
     def change_focus(self):
         s = self.sender()
@@ -139,6 +146,7 @@ class MainWindow(QMainWindow):
         transformed_grid.function = self.function.text()
         transformed_grid.transformed_function = 'y = ' + self.function.text()
         transformed_grid.init_function()
+        transformed_grid.transform()
         self.rotated_function.setText('y = ' + transformed_grid.function)
 
     # x-button

@@ -128,12 +128,12 @@ class Grid(BackGrid):
     def init_function(self):
         self.function_dots = []
         f = self.function.replace('^', '**').lower()
-        for x in np.arange(-10.0, 10.0, 0.01):
+        for x in np.arange(-10.0, 10.0, 0.005):
             try:
                 y = eval(f)
                 self.function_dots.append(Vertex((x, y), self.cell_size, (self.x, self.y)))
             except Exception as err:
-                print(err)
+                pass
 
     # delete chosen vector
     def delete_vector(self):
@@ -191,9 +191,15 @@ class Grid(BackGrid):
         for i in range(len(self.function_dots)):
             self.function_dots[i].transform(matrix)
         f = '{} = ' + self.function.replace('x', '{}')
-        params = [[(str(round(1/j, 2)) if abs(j) > Epsilon else '0') for j in i] for i in matrix]
-        self.transformed_function = f.format('(' + params[0][1] + '*x + ' + params[1][1] + '*y)',
-                                             '(' + params[0][0] + '*x + ' + params[1][0] + '*y)')
+        # tranform dot coords to coords relatively to another system
+        # in this coordinates
+        try:
+            param = np.linalg.inv(matrix)
+            param = [[str(round(j, 3)) for j in i] for i in param]
+            self.transformed_function = f.format('(' + param[1][0] + '*x + ' + param[1][1] + '*y)',
+                                                 '(' + param[0][0] + '*x + ' + param[0][1] + '*y)')
+        except Exception as err:
+            self.transformed_function = ''
 
     # return what vector we grabbed by mouse
     def check_grabbing(self, mouse_cords):
