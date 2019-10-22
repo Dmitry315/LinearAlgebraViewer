@@ -128,7 +128,7 @@ class Grid(BackGrid):
     def init_function(self):
         self.function_dots = []
         f = self.function.replace('^', '**').lower()
-        for x in np.arange(-10.0, 10.0, 0.005):
+        for x in np.arange(-20.0, 20.0, 0.005):
             try:
                 y = eval(f)
                 self.function_dots.append(Vertex((x, y), self.cell_size, (self.x, self.y)))
@@ -196,8 +196,9 @@ class Grid(BackGrid):
         try:
             param = np.linalg.inv(matrix)
             param = [[str(round(j, 3)) for j in i] for i in param]
+            n = f.count('{}') - 1
             self.transformed_function = f.format('(' + param[1][0] + '*x + ' + param[1][1] + '*y)',
-                                                 '(' + param[0][0] + '*x + ' + param[0][1] + '*y)')
+                                                 *(['(' + param[0][0] + '*x + ' + param[0][1] + '*y)']*n))
         except Exception as err:
             self.transformed_function = ''
 
@@ -217,5 +218,5 @@ class Grid(BackGrid):
 
 
 # init grids
-main_grid = BackGrid((width // 2, height // 2), 20, 60, GREY)
-transformed_grid = Grid((width // 2, height // 2), 20, 60, BLUE)
+main_grid = BackGrid((width // 2, height // 2), 40, 60, GREY)
+transformed_grid = Grid((width // 2, height // 2), 40, 60, BLUE)
