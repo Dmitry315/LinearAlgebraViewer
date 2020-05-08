@@ -197,8 +197,8 @@ class Grid(BackGrid):
             param = np.linalg.inv(matrix)
             param = [[str(round(j, 3)) for j in i] for i in param]
             n = f.count('{}') - 1
-            self.transformed_function = f.format('(' + param[1][0] + '*x + ' + param[1][1] + '*y)',
-                                                 *(['(' + param[0][0] + '*x + ' + param[0][1] + '*y)']*n))
+            self.transformed_function = f.format('((' + param[1][0] + '*x) + (' + param[1][1] + '*y))',
+                                                 *(['((' + param[0][0] + '*x) + (' + param[0][1] + '*y))']*n))
         except Exception as err:
             self.transformed_function = ''
 
