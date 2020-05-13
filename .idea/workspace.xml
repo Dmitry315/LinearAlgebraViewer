@@ -2,246 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cb0bb8a-d4a1-4cbe-93aa-20589611a089" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build/main/Analysis-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/COLLECT-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/EXE-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/PKG-00.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/PKG-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/PYZ-00.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/PYZ-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/main.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/main.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/warn-main.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/main/xref-main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Include/pyconfig.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/MSVCP140.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/bin/d3dcompiler_47.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/bin/libEGL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/bin/libGLESv2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/bin/opengl32sw.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/bin/qt.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/iconengines/qsvgicon.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qgif.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qicns.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qico.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qjpeg.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qsvg.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qtga.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qtiff.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qwbmp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/imageformats/qwebp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/platforms/qminimal.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/platforms/qoffscreen.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/platforms/qwebgl.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/platforms/qwindows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/platformthemes/qflatpak.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/Qt/plugins/styles/qwindowsvistastyle.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/QtCore.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/QtGui.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/QtWidgets.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/sip.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_ar.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_bg.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_ca.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_cs.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_da.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_de.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_en.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_es.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_fi.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_fr.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_gd.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_he.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_hu.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_it.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_ja.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_ko.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_lv.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_pl.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_ru.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_sk.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/translations/qtbase_uk.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/uic/widget-plugins/qaxcontainer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/uic/widget-plugins/qscintilla.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/uic/widget-plugins/qtcharts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/uic/widget-plugins/qtprintsupport.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/uic/widget-plugins/qtquickwidgets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/uic/widget-plugins/qtwebenginewidgets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/PyQt5/uic/widget-plugins/qtwebkit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5DBus.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5Gui.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5Network.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5Qml.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5Quick.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5Svg.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5WebSockets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/Qt5Widgets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/SDL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/SDL_image.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/SDL_mixer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/SDL_ttf.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/VCRUNTIME140.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_bz2.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_cffi_backend.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_ctypes.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_decimal.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_elementtree.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_hashlib.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_lzma.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_multiprocessing.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_socket.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_ssl.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/_win32sysloader.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-multibyte-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/lib2to3/Grammar.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/lib2to3/Grammar3.6.2.final.0.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/lib2to3/PatternGrammar.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/lib2to3/PatternGrammar3.6.2.final.0.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libGLESv2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libfreetype-6.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libiomp5md.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libjpeg-8.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libmpg123-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libogg-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libpng16-16.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libtiff-5.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libvorbis-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libvorbisfile-3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/libwebp-5.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/main.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/main.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/main_window.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mfc140u.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_avx.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_avx2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_avx512.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_avx512_mic.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_blacs_ilp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_blacs_intelmpi_ilp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_blacs_intelmpi_lp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_blacs_lp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_blacs_mpich2_ilp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_blacs_mpich2_lp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_blacs_msmpi_ilp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_blacs_msmpi_lp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_cdft_core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_def.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_intel_thread.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_mc.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_mc3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_pgi_thread.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_rt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_scalapack_ilp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_scalapack_lp64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_sequential.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_tbb_thread.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_avx.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_avx2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_avx512.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_avx512_mic.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_cmpt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_def.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_mc.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_mc2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/mkl_vml_mc3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/numpy/core/multiarray.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/numpy/core/umath.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/numpy/fft/fftpack_lite.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/numpy/linalg/_umath_linalg.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/numpy/linalg/lapack_lite.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/numpy/random/mtrand.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pyexpat.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/_freetype.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/base.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/bufferproxy.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/cdrom.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/color.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/constants.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/display.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/draw.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/event.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/fastevent.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/font.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/image.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/imageext.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/joystick.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/key.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/mask.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/math.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/mixer.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/mixer_music.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/mouse.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/overlay.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/pixelarray.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/pixelcopy.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/rect.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/rwobject.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/scrap.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/surface.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/surflock.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/time.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pygame/transform.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/python3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/python36.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pythoncom36.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/pywintypes36.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/scipy/_lib/_ccallback_c.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/select.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/sip.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/ucrtbase.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/unicodedata.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/win32api.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/win32com/shell/shell.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/win32evtlog.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/win32pdh.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/win32trace.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/win32ui.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/win32wnet.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main/zlib1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About.docx" beforeDir="false" afterPath="$PROJECT_DIR$/About.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -251,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="192" column="54" lean-forward="true" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
+              <caret line="192" column="54" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -272,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="-2565">
               <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
             </state>
           </provider>
@@ -281,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="306">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -338,6 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,7 +112,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,7 +215,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18055555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -486,16 +247,9 @@
     <SUITE FILE_PATH="coverage/Linear_Algebra_Viewer$gui.coverage" NAME="gui Coverage Results" MODIFIED="1560686380342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="306">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -503,17 +257,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="192" column="54" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="-2565">
           <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="192" column="54" lean-forward="true" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
